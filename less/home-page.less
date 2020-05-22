@@ -1,15 +1,32 @@
-.home {
+ .header {
+   display: flex;
+   flex-direction: flex-start;
+   justify-content: space-evenly;
 
-  .content-home {
+   h1{
+     margin-top: 2%;
+   }
+ }
+ 
+ 
+ .container-home {
     padding-top: 30px;
+    width: 90%;
     border-bottom: 2px dashed @navigation-border;
+
+    .text-home {
+      width: 80%;
+    }
+
+    .img-head {
+      width: 100%;
+    }
   }
   
 
   .content-section {
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 
 
@@ -32,6 +49,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: space-between;
+    
 
     .text-content {
       padding-left: 1%;
@@ -52,15 +72,15 @@
       border-radius: 10px;
     }
   }
-}
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     .destination {
-      width: 30%;
+      width: 20%;
       margin-bottom: 30px;
 
       button {
@@ -69,4 +89,3 @@
       }
     }   
   }
-// home
