@@ -1,26 +1,62 @@
-<div class="container">
-    <form action="action_page.php">
-  
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="firstname" placeholder="Your first name..">
-  
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="lastname" placeholder="Your last name..">
+<!doctype html>
 
-      <label for="email">First Name</label>
-      <input type="text" id="email" name="email-address" placeholder="Your email address..">
-  
-      <label for="package">Travel Package</label>
-      <select id="trpackage" name="pkg">
-        <option value="Sun">Fun in the Sun</option>
-        <option value="Mountain">Mountain Excurssion</option>
-        <option value="Island">Island Getaway</option>
-      </select>
-  
-      <label for="subject">Special Instructions</label>
-      <textarea id="subject" name="subject" placeholder="Please leave any special instructions here...." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Travel Package - Fun Bus Travel Agency</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+
+  <style>a {text-decoration: none; color:black;} </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <section class="header">
+    <h1>Fun Bus</h1>
+      <nav>        
+          <a href="index.html">Home</a>
+          <a href="About">About Us</a>
+          <a href="Blog">Blog</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+  </section> 
+
+
+  <div class="container">
+      <form action="action_page.php">
+    
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="firstname" placeholder="Your first name..">
+    
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lastname" placeholder="Your last name..">
+
+        <label for="email">First Name</label>
+        <input type="text" id="email" name="email-address" placeholder="Your email address..">
+    
+        <label for="package">Travel Package</label>
+        <select id="trpackage" name="pkg">
+          <option value="Sun">Fun in the Sun</option>
+          <option value="Mountain">Mountain Excursion</option>
+          <option value="Island">Island Getaway</option>
+        </select>
+    
+        <label for="subject">Special Instructions</label>
+        <textarea id="subject" name="subject" placeholder="Please leave any special instructions here...." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+
+</body>
+
+  <footer class="footer">
+    <p>Copyright Fun Bus 2018</p>
+  </footer>
