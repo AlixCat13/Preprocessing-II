@@ -3,9 +3,10 @@
    align-items: center;
    justify-content: space-evenly;
    border-bottom: 2px dashed @navigation-border;
+   
    @media(max-width: 500px) {
     .flex-box();
-    align-items: center;
+    
 } 
 
    h1{
@@ -17,9 +18,13 @@
  
  .container-home {
     padding-top: 30px;
-    width: 100%;
+    width: 60%;
     border-bottom: 2px dashed @navigation-border;
     
+    @media(max-width: 500px) {
+      .flex-box();
+      
+  } 
    
 
     .text-home {
@@ -38,7 +43,11 @@
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
-    
+   
+    @media(max-width: 500px) {
+      .flex-box();
+      
+  } 
 
 
 
@@ -66,10 +75,20 @@
     margin-left: 15%;
     width: 60%;
     
+    @media(max-width: 500px) {
+      .flex-box();
+      
+  } 
+    
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media (max-width: 500px) {
+        text-align: left;
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -84,6 +103,10 @@
     margin: 0 auto 30px;
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 500px) {
+      .flex-box();
+  } 
     
 
     img {
@@ -102,10 +125,17 @@
     justify-content: space-evenly;
     width: 80%;
     margin-left: 10%;
+    border: 1px solid red;
+
+    @media(max-width: 500px) {
+      .flex-box();
+      width: 80%;
+  } 
 
     .destination {
       width: 20%;
       margin-bottom: 30px;
+      
 
       button {
         background-color: @button-bg;
