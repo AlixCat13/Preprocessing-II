@@ -18,8 +18,11 @@
  
  .container-home {
     padding-top: 30px;
-    width: 60%;
-    border-bottom: 2px dashed @navigation-border;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     @media(max-width: 500px) {
       .flex-box();
@@ -28,32 +31,35 @@
    
 
     .text-home {
-      width: 80%;
-      margin-left: 15%;
+      width: 70%;
+      border-bottom: 2px dashed @navigation-border;
+      
     }
 
     .img-head {
-      width: 80%;  
-      margin-left: 15%;    
+      width: 70%;  
+          
     }
   }
   
 
   .content-section {
-    margin: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10%;
+    width: 80%;     
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;   
+    
    
     @media(max-width: 500px) {
       .flex-box();
       
   } 
 
-
-
     .text-content {
-      width: 48%;
-      padding-right: 1%;
+      width: 40%;
+      padding-right: 10%;
       margin-left: 15%;
     }
 
@@ -69,11 +75,12 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    margin-left: 10%;
+    width: 80%;     
     display: flex;
-    justify-content: space-between;
-    margin-left: 15%;
-    width: 60%;
+    flex-direction: row;   
+    
+    border-bottom: 2px dashed @navigation-border; 
     
     @media(max-width: 500px) {
       .flex-box();
@@ -82,8 +89,10 @@
     
 
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      width: 40%;
+      padding-right: 10%;
+      margin-left: 10%;
+       
 
       @media (max-width: 500px) {
         text-align: left;
@@ -92,11 +101,16 @@
     }
 
     .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+      width: 48%;
+      padding-left: 15%;
       
-    }
+      
+
+      img {
+        border-radius: 10px;
+      }
   }
+}
 
   .content-destination {
     width: 60%;
@@ -125,7 +139,7 @@
     justify-content: space-evenly;
     width: 80%;
     margin-left: 10%;
-    border: 1px solid red;
+    
 
     @media(max-width: 500px) {
       .flex-box();
@@ -140,6 +154,7 @@
       button {
         background-color: @button-bg;
         .button-styling();
+        .button-border(10px, 50px, 200px);
       }
     }   
   }

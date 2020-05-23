@@ -219,8 +219,10 @@ img {
 }
 .container-home {
   padding-top: 30px;
-  width: 60%;
-  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .container-home {
@@ -231,17 +233,19 @@ img {
   }
 }
 .container-home .text-home {
-  width: 80%;
-  margin-left: 15%;
+  width: 70%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .container-home .img-head {
-  width: 80%;
-  margin-left: 15%;
+  width: 70%;
 }
 .content-section {
-  margin: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 10%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 @media (max-width: 500px) {
   .content-section {
@@ -252,8 +256,8 @@ img {
   }
 }
 .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
+  width: 40%;
+  padding-right: 10%;
   margin-left: 15%;
 }
 .content-section .img-content {
@@ -265,11 +269,11 @@ img {
 }
 .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  margin-left: 10%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
-  margin-left: 15%;
-  width: 60%;
+  flex-direction: row;
+  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .inverse-content {
@@ -280,8 +284,9 @@ img {
   }
 }
 .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
+  width: 40%;
+  padding-right: 10%;
+  margin-left: 10%;
 }
 @media (max-width: 500px) {
   .inverse-content .text-content {
@@ -290,8 +295,11 @@ img {
   }
 }
 .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
+  width: 48%;
+  padding-left: 15%;
+}
+.inverse-content .img-content img {
+  border-radius: 10px;
 }
 .content-destination {
   width: 60%;
@@ -320,7 +328,6 @@ img {
   justify-content: space-evenly;
   width: 80%;
   margin-left: 10%;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .content-pick {
@@ -337,10 +344,10 @@ img {
 }
 .content-pick .destination button {
   background-color: #17A2B8;
-  border-radius: 10px;
   color: white;
   font-family: 'Roboto' 'sans sarif';
   font-size: 2rem;
+  border-radius: 10px;
   height: 50px;
   width: 200px;
 }

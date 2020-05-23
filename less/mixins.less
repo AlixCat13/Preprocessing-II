@@ -2,12 +2,15 @@
 
 .button-styling(){
     background-color: @button-bg;
-    border-radius: 10px;
     color: white;
     font-family: 'Roboto' 'sans sarif';
-    font-size: 2rem;
-    height: 50px;
-    width: 200px;    
+    font-size: 2rem;   
+}
+
+.button-border(@radius, @height, @width){
+	border-radius: @radius;
+    height: @height;
+    width: @width;
 }
 
 .flex-box(){
@@ -16,3 +19,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+
+
