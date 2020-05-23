@@ -169,10 +169,17 @@ img {
   margin: 0 auto;
 }
 .header nav {
+  width: 45%;
   font-size: 2rem;
   font-family: 'Roboto' 'sans sarif';
   text-decoration: none;
   margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.header nav a {
+  justify-content: space-between;
 }
 .footer {
   width: 100%;
@@ -188,7 +195,7 @@ img {
 }
 .header {
   display: flex;
-  flex-direction: flex-start;
+  align-items: center;
   justify-content: space-evenly;
 }
 .header h1 {
@@ -201,9 +208,11 @@ img {
 }
 .container-home .text-home {
   width: 80%;
+  margin-left: 15%;
 }
 .container-home .img-head {
-  width: 100%;
+  width: 80%;
+  margin-left: 15%;
 }
 .content-section {
   margin: 30px 0;
@@ -234,7 +243,8 @@ img {
   padding-right: 0;
 }
 .inverse-content .img-content {
-  margin-right: 0%;
+  padding-right: 1%;
+  padding-left: 0;
 }
 .content-destination {
   width: 60%;
