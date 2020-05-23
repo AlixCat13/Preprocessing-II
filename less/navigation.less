@@ -9,8 +9,11 @@
     display: flex;
     justify-content: space-between; 
     
-    @media(max-width: 500px) {
-        .flex-box();
+    @media @mobile {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    
     }  
      
     a {
