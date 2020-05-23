@@ -226,27 +226,35 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin-left: 10%;
+  width: 60%;
 }
 .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
 .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
+  margin-right: 0%;
 }
 .content-destination {
-  width: 75%;
+  width: 60%;
   margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
 }
 .content-destination img {
   border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
 }
 .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  width: 80%;
+  margin-left: 10%;
 }
 .content-pick .destination {
   width: 20%;
